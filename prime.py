@@ -21,6 +21,7 @@ for i in range(2,n):
 print(pr)
 
 """ 
+
 TO CALCULATE THE NUMBER OF TIME A PRIME
 COME IN A NUMBER FACTORIAL
 
@@ -39,4 +40,25 @@ print(z)
 for k in range(1,10):
     l=int(m.sqrt(k))
     print(l,end='\n')
+
+
+
+**CHAT GPT CODE 
+def find_primes(n):
+    primes = []
+    for i in range(2, n):
+        is_prime = True
+        for j in range(2, int(i ** 0.5) + 1):
+            if i % j == 0:
+                is_prime = False
+                break
+        if is_prime:
+            primes.append(i)
+    return primes
+
+n = int(input("Enter an integer: "))
+primes = find_primes(n)
+print("Prime numbers less than", n, "are:", primes)
+
+
 """
