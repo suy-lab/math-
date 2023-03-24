@@ -1,12 +1,12 @@
 import numpy as np
 
-d=np.zeros((100),dtype=int)
+d=np.zeros((101),dtype=int)
 
 
 i=1
 
 while (i<=100):
-    for j in range(100):
+    for j in range(101):
         if((j%i)!=0):
             continue
         else:
@@ -18,7 +18,7 @@ while (i<=100):
 
 
 count=0
-for i in range(100):
+for i in range(101):
     if(d[i]==1):
         count+=1
         
